@@ -9,5 +9,10 @@ event_store: build/Makefile
 build/Makefile:
 	mkdir -p build; cd build; cmake ..;
 
+test:
+	cd test; make test
+
 clean:
 	-rm -rf build
+
+.PHONY: test
