@@ -14,5 +14,6 @@ test:
 
 clean:
 	-rm -rf build
+	-cd test; make clean
 
 .PHONY: test

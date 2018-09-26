@@ -1,11 +1,12 @@
-#include <chrono>
+#pragma once
+
 #include <string>
 
 namespace challenge {
 
 struct Event {
   std::string type;
-  std::chrono::system_clock::time_point timestamp;
+  long timestamp = -1;
 };
 
 }  // namespace challenge

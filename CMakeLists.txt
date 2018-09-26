@@ -10,3 +10,4 @@ file(GLOB_RECURSE HEADERS "include/*.h*")
 file(GLOB_RECURSE SOURCES "src/*.c*")
 
 add_executable(event_store ${SOURCES} ${HEADERS})
+target_link_libraries(event_store pthread)
